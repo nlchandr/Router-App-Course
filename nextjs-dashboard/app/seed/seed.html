@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Run Async Export</title>
+</head>
+<body>
+    <script type="module">
+        // Import the specific function from your file
+        import { GET } from './route.js';
+
+        // Call the async function
+        GET().then(result => {
+            console.log("Function finished");
+        });
+
+        // Or use an IIFE for top-level await if your browser supports it
+        //(async () => {
+        //    await myAsyncFunction();
+        //})();
+    </script>
+</body>
+</html>

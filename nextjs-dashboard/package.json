@@ -3,7 +3,8 @@
   "scripts": {
     "build": "next build",
     "dev": "next dev --turbopack",
-    "start": "next start"
+    "start": "next start",
+    "seed": "node -r dotenv/config ./app/seed/seed.js"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
@@ -18,7 +19,6 @@
     "react": "latest",
     "react-dom": "latest",
     "tailwindcss": "3.4.17",
-    "typescript": "5.7.3",
     "use-debounce": "^10.0.4",
     "zod": "^3.25.17"
   },
@@ -26,12 +26,20 @@
     "@types/bcrypt": "^5.0.2",
     "@types/node": "22.10.7",
     "@types/react": "19.0.7",
-    "@types/react-dom": "19.0.3"
+    "@types/react-dom": "19.0.3",
+    "typescript": "^6.0.3"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
       "bcrypt",
       "sharp"
     ]
-  }
+  },
+  "name": "nextjs-dashboard",
+  "version": "1.0.0",
+  "description": "This is the starter template for the Next.js App Router Course. It contains the starting code for the dashboard application.",
+  "main": "postcss.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
